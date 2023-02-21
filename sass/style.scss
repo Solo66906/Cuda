@@ -325,3 +325,82 @@ header {
     }
   }
 }
+.portfolio {
+  background-color: #ffdd99;
+  .portfolio_contents {
+    display: flex;
+    flex-direction: column;
+    .portfolio_header {
+      margin-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-weight: $TitilliumBold;
+        text-transform: uppercase;
+        font-size: 37px;
+        color: #3c4761;
+      }
+      span {
+        margin: 20px;
+        width: 90px;
+        height: 4px;
+        background-color: #e5c37f;
+      }
+      p {
+        font-weight: $TitilliumRegular;
+        color: #3c4761;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .portfolio_btn {
+      color: #393939;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-transform: uppercase;
+      font-family: $TitilliumRegular;
+      margin-top: 50px;
+      li {
+        margin-right: 10px;
+        padding: 10px 30px;
+        background-color: #ebc985;
+        border-radius: 3px;
+        transition: 0.2s;
+      }
+      li:last-child {
+        margin-right: 0;
+      }
+      li:hover {
+        background-color: #fff;
+      }
+      .active {
+        background-color: #fff;
+      }
+    }
+    .portfolio_card {
+      .card_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .card_item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 60px 0px;
+          p {
+            text-transform: uppercase;
+            margin-top: 30px;
+            font-family: $TitilliumRegular;
+            color: #393939;
+          }
+        }
+        .card_item:last-child,
+        .card_item:nth-last-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
