@@ -330,8 +330,9 @@ header {
   .portfolio_contents {
     display: flex;
     flex-direction: column;
+    padding-top: 120px;
+    padding-bottom: 110px;
     .portfolio_header {
-      margin-top: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -384,6 +385,7 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 90px;
         .card_item {
           display: flex;
           flex-direction: column;
@@ -400,6 +402,96 @@ header {
         .card_item:nth-last-child(2) {
           margin-bottom: 0;
         }
+      }
+    }
+    .load {
+      display: flex;
+      justify-content: center;
+      h4 {
+        font-weight: $TitilliumSemi;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+        padding: 30px 50px;
+        background: #17c2a4;
+        border-radius: 4px;
+        border-bottom: 4px solid #14a58c;
+      }
+    }
+  }
+}
+.testimonials {
+  background-color: #d74680;
+  color: #fff;
+  .testimonials_contant {
+    padding: 120px 0px;
+    .testimonials_header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        font-weight: $TitilliumBold;
+        text-transform: uppercase;
+        font-size: 37px;
+      }
+      span {
+        margin: 20px;
+        width: 90px;
+        height: 4px;
+        background-color: #b73c6d;
+      }
+      p {
+        font-weight: $TitilliumRegular;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+    .testimonials_card {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        flex-direction: column;
+        width: 540px;
+        margin-bottom: 100px;
+        .card_header {
+          display: flex;
+          align-items: center;
+          .pic {
+            width: 100px;
+            height: 100px;
+            background-color: #787878;
+            border-radius: 50%;
+            margin-right: 50px;
+          }
+          .testimonial {
+            font-weight: $TitilliumRegular;
+            font-style: italic;
+          }
+        }
+        .text {
+          display: flex;
+          flex-direction: column-reverse;
+          margin-left: 150px;
+          .work {
+            font-weight: $TitilliumRegular;
+            font-size: 18px;
+            color: #ffdd99;
+            margin-top: 2px;
+          }
+          .testimonials_name {
+            font-weight: $TitilliumBold;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+        }
+      }
+      .card:last-child,
+      .card:nth-last-child(2) {
+        margin-bottom: 0;
       }
     }
   }
