@@ -528,23 +528,30 @@ header {
       flex-direction: column;
       .output_header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 70px;
         input {
+          margin-right: 20px;
           background-color: #273a71;
           color: #fff;
           border: 0px;
           border-radius: 3px;
           width: 100%;
-          max-width: 520px;
+          max-width: 420px;
           padding: 20px 20px;
+        }
+        input:last-child {
+          margin-right: 0px;
         }
       }
       .message {
         margin-top: 30px;
         margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
         textarea {
           width: 100%;
+          max-width: 860px;
           height: 200px;
           background-color: #273a71;
           color: #fff;
@@ -567,6 +574,26 @@ header {
           color: #fff;
           padding: 30px 50px;
         }
+      }
+    }
+  }
+}
+footer {
+  background-color: #344b8e;
+  .footer_list {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    .footer_item {
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: $TitilliumSemi;
+        font-size: 18px;
+        transition: 0.2s;
+      }
+      a:hover {
+        color: #30bae7;
       }
     }
   }
